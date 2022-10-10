@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Flask App</title>
+  </head>
+  <body>
+    <header>
+      <h1>Master Blaster Multiplicator</h1>
+    </header>
+    <main>
+      <p>Enter 5 Numbers you want to multiply:</p>
+      <form method="POST">
+        <div><input value="{{first}}" name="first"></input></div>
+        <div><input value="{{second}}" name="second"></input></div>
+        <div><input value="{{third}}" name="third"></input></div>
+        <div><input value="{{fourth}}" name="fourth"></input></div>
+        <div><input value="{{fifth}}" name="fifth"></input></div>
+        <p><strong>Result: {{result}}</strong></p>
+        <button>Multiply!</button>
+      </form>
+    </main>
+    <footer><p><small>© All liability reserved</small></p></footer>
+  </body>
+</html>

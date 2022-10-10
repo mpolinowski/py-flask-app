@@ -1,0 +1,1 @@
+https://mpolinowski.github.io/docs/Development/Go/2022-10-04-go-ntp-client/2022-10-04

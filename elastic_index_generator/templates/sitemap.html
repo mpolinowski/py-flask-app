@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Elastic Generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  </head>
+  <body>
+    <div class="card">
+      <header class="m-2">
+
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+              <img src="https://forum.instar.com/uploads/default/original/1X/1e53029ee275f517bda030431b4f91e267038fb1.jpeg" width="90" height="28">
+            </a>
+          </div>
+        
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="/">
+                Single URL
+              </a>
+              <a class="navbar-item" href="/sitemap">
+                Process Sitemap
+              </a>
+              <a class="navbar-item" href="/process">
+                File Input
+              </a>
+            </div>
+          </div>
+        </nav>
+
+        <h1 class="title m-2">XML Sitemap</h1>
+
+      </header>
+
+      <main class="section m-2">
+        <div class="container">
+          <h2 class="subtitle">Extract URLs</h2>
+          <div class="field">
+            <label class="label">Give the url of the sitemap you want to process:</label>
+            <form method="POST">
+              <div class="control"><input name="url" class="input is-success" type="text"></input></div>
+              <p><small>{{url}}</small></p>
+              <p><small>{{info}}</small></p>
+              <br/>
+              <button class="button is-primary">Process</button>
+              <p class="mt-1"><small><a href="/process">Continue with processing the Lists of URLs.</a></small></p>
+            </form>
+          </div>
+        </div>
+
+      </main>
+    </div>
+
+    <footer class="m-2"><p><small>© All liability reserved</small></p></footer>
+  </body>
+</html>

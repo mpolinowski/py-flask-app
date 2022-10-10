@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Elastic Generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  </head>
+  <body>
+    <div class="card">
+      <header class="m-2">
+
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="/">
+              <img src="https://forum.instar.com/uploads/default/original/1X/1e53029ee275f517bda030431b4f91e267038fb1.jpeg" width="90" height="28">
+            </a>
+          </div>
+        
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="/">
+                Single URL
+              </a>
+              <a class="navbar-item" href="/sitemap">
+                Process Sitemap
+              </a>
+              <a class="navbar-item" href="/process">
+                File Input
+              </a>
+            </div>
+          </div>
+        </nav>
+
+        <h1 class="title m-2">Generate an Elastic Doc from a URL</h1>
+
+      </header>
+
+      <main class="section m-2">
+
+        <div class="container">
+            <h2 class="subtitle">Extract Information</h2>
+            <label class="label">Give the url of the page you want to process:</label>
+            <form method="POST">
+              <div><input value="{{url}}" name="url" class="input is-success"></input></div>
+              <br/>
+              <button class="button is-primary">Process</button>
+            </form>
+            <br/><br/>
+            <div class="field">
+              <label class="label">Elastic Doc:</label>
+              <div class="control is-small">
+                <textarea class="textarea is-primary is-small" readonly>{{doc}}</textarea>
+              </div>
+            </div>
+          </div>
+
+      </main>
+
+    </div>
+    <footer class="m-2"><p><small>© All liability reserved</small></p></footer>
+
+  </body>
+</html>
